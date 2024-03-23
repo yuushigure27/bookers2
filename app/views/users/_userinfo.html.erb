@@ -1,0 +1,22 @@
+<div class="container px-5 px-sm-0">
+      <h2>User info</h2><br>
+      <%= image_tag user.get_profile_image, size: "80x80" %><br>
+      <table class="table">
+       <tbody>
+        <tr>
+      <th>name <%= user.name %></th>
+      </tr>
+      <tr>
+      <th>introduction <%= user.introduction %></th>
+      </tr>
+      </tbody>
+      </table>
+
+       <%= link_to edit_user_path(user), class: 'btn btn-outline-secondary btn-block' do %>
+        <div class="row">
+         <div class="col-11">
+          <i class="fa-solid fa-user-gear"></i>
+         </div>
+        </div>
+       <% end %>
+</div>
